@@ -55,7 +55,7 @@ function chatBot() {
         if(this.match('(rules)'))
             return ["Store your game on this repo or in your repo.",
                     "Try to not use the same PAAS provider.",
-                    "With the game deployed, paste your results on issue #4"
+                    "With the game deployed, paste your results on issue #4",
                     "Enjoy with the technology and learn"];
 
         if(this.match('(help)'))
