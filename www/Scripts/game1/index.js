@@ -57,8 +57,8 @@ $(function() {
     var ping = function(){
 
     	var payload = {
-            value1: "demo",
-            value2: "demo2"
+            "value1": "demo",
+            "value2": "demo2"
         };
 
         var data = new FormData();
