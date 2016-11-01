@@ -71,7 +71,7 @@ function chatBot() {
         if(this.match('(help)'))
             return ["Create an Issue on Github. My creator will help you."];
 
-        if(this.match('(help)'))
+        if(this.match('(about)'))
             return ["Created with ❤️ in Milton Keynes, UK"];
 
         if(this.input == 'noop')
