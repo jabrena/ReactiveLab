@@ -32,7 +32,10 @@ function chatBot() {
             return ["hey i'm just a proof of concept", "you can make me smarter if you'd like"];
         
         if(this.match('(game|game1|challenge|winter game|game)'))
-            return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
+            return [
+            "Nice, we are going to play...",
+            "Do you like UX? Or...", 
+            "Do you like middleware plumbing?"];
 
         if(this.match('(1|ux|frontend|front-end|client)'))
             return ["What is your favourite channel technology? (Javascript, IOS or Android)"];
