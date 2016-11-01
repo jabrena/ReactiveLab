@@ -64,7 +64,7 @@ $(function() {
 		var data = new FormData();
 		data.append( "json", JSON.stringify( payload ) );
 
-        fetch("https://robwu.nl/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+        fetch("https://cors-anywhere.herokuapp.com/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
         	method: "POST",
         	mode: 'cors', 
