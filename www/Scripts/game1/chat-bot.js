@@ -37,17 +37,20 @@ function chatBot() {
         if(this.match('(javascript|js)'))
             return [
             "In the first game, you have to learn to publish a Static WebApp on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
-            "Later, read some stuff about reactive extensions for your favourite front-end environment."];
+            "Later, read some stuff about reactive extensions for your favourite front-end environment.",
+            "You have 2 weeks to get your best in this game"];
 
         if(this.match('(android|ios|swift|objective c|native)'))
             return [
             "In the first game, you have to learn to publish a Native application on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
-            "Later, read some stuff about reactive extensions for your favourite front-end environment."];
+            "Later, read some stuff about reactive extensions for your favourite front-end environment."
+            "You have 2 weeks to get your best in this game"];
         
         if(this.match('(2|java|middleware|spring)'))
             return [
             "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
-            "It is possible to get extra points if you add some feature about Spring Cloud Contract."];
+            "It is possible to get extra points if you add some feature about Spring Cloud Contract."
+            "You have 2 weeks to get your best in this game"];
 
         if(this.match('(help)'))
             return ["Create an Issue on Github. My creator will help you."];
