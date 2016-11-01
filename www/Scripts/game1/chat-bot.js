@@ -13,7 +13,7 @@ function chatBot() {
             contentType : "application/json",
             dataType: "jsonp",
             //dataType: 'json',
-            jsonpCallback: "logResults",
+            //jsonpCallback: "logResults",
             data: JSON.stringify({ "value1": "demo", "value2" : "demo", "value3" : "demo" }),
         });
 
