@@ -13,6 +13,9 @@ function chatBot() {
         if(this.match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
             return ["um... hi?"];
         
+        if(this.match('(robin)(\\s|!|\\.|$)'))
+            return ["This is my name. Do you need some info about something?"];
+
         if(this.match('what[^ ]* up') || this.match('sup') || this.match('how are you'))
             return ["this github thing is pretty cool, huh?"];
         
@@ -28,7 +31,7 @@ function chatBot() {
         if(this.match('(dumb|stupid|is that all)'))
             return ["hey i'm just a proof of concept", "you can make me smarter if you'd like"];
         
-        if(this.match('(game1|challenge|winter game|game)'))
+        if(this.match('(game|game1|challenge|winter game|game)'))
             return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
 
         if(this.match('(1|ux|frontend|front-end|client)'))
