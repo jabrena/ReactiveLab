@@ -32,7 +32,7 @@ function chatBot() {
             return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
 
         if(this.match('(1|ux|frontend|front-end|client)'))
-            return ["Do you like Javascript, IOS or Android?"];
+            return ["What is your favourite channel technology? (Javascript, IOS or Android)"];
 
         if(this.match('(javascript|js)'))
             return [
