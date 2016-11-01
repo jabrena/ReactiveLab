@@ -64,10 +64,9 @@ $(function() {
 		var data = new FormData();
 		data.append( "json", JSON.stringify( payload ) );
 
-		var ifttt = "https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT";
-        //fetch("http://anyorigin.com/go?url=https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
-        //fetch("http://whateverorigin.org/get?url=" + encodeURIComponent(ifttt),
-        fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+		var corsProvider = "https://crossorigin.me/";
+		var iftttRecipe = "https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT";
+        fetch(corsProvider + iftttRecipe,
         {
         	method: "POST",
         	mode: 'cors', 
@@ -77,7 +76,7 @@ $(function() {
             //body: JSON.stringify({"value1": "demo", "value2": "demo2"})
             body : data
         })
-        .then(function(res){ console.log(res); })
+		.then(function(res){ console.log(res); })
         // $.post({
         //     url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
         //     contentType : "application/json",
