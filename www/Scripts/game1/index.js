@@ -66,8 +66,11 @@ $(function() {
 
         fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
-            method: "POST",
-            body: JSON.stringify({value1: "demo", value2: "demo2"})
+        	method: "POST",
+        	headers: new Headers({
+				"Content-Type: application/json"
+			}),
+            body: JSON.stringify({"value1": "demo", "value2": "demo2"})
         })
         .then(function(res){ console.log(res); })
         // $.post({
