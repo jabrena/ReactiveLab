@@ -56,28 +56,28 @@ $(function() {
 
     var ping = function(){
 
-    	// var payload = {
-     //        value1: "demo",
-     //        value2: "demo2"
-     //    };
+    	var payload = {
+            value1: "demo",
+            value2: "demo2"
+        };
 
-     //    var data = new FormData();
-     //    data.append( "json", JSON.stringify( payload ) );
+        var data = new FormData();
+        data.append( "json", JSON.stringify( payload ) );
 
-     //    fetch("https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
-     //    {
-     //        method: "POST",
-     //        body: data
-     //    })
-     //    .then(function(res){ console.log(res.json()); })
-        $.post({
-            url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
-            contentType : "application/json",
-            dataType: "jsonp",
-            //dataType: 'json',
-            //jsonpCallback: "logResults",
-            data: JSON.stringify({ value1: "demo" })
-        });
+        fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+        {
+            method: "POST",
+            body: data
+        })
+        .then(function(res){ console.log(res.json()); })
+        // $.post({
+        //     url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
+        //     contentType : "application/json",
+        //     dataType: "jsonp",
+        //     //dataType: 'json',
+        //     //jsonpCallback: "logResults",
+        //     data: JSON.stringify({ value1: "demo" })
+        // });
     }
 	
 	// add a new line to the chat
