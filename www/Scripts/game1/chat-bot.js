@@ -99,6 +99,7 @@ function chatBot() {
                 "You have 2 weeks to get your best in this game"];
         
         if(this.match('(2|java|middleware|spring)'))
+            this.ping("winter-games-game1-java");
             return [
                 "Oki,",
                 "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
