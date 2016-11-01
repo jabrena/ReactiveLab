@@ -25,7 +25,6 @@ function chatBot() {
             headers: new Headers({
                 "Content-Type": "application/json"
             }),
-            //body: JSON.stringify({"value1": "demo", "value2": "demo2"})
             body : data
         })
         .then(function(res){ console.log(res); })
