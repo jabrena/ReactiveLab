@@ -62,12 +62,12 @@ $(function() {
         };
 
         var data = new FormData();
-        data.append( "json", JSON.stringify( payload ) );
+        //data.append( "json", JSON.stringify({value1: "demo", value2: "demo2"});
 
         fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
             method: "POST",
-            body: data
+            body: JSON.stringify({value1: "demo", value2: "demo2"})
         })
         .then(function(res){ console.log(res); })
         // $.post({
