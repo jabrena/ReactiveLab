@@ -14,7 +14,7 @@ function chatBot() {
             //dataType: "jsonp",
             dataType: 'json',
             //jsonpCallback: "logResults",
-            data: JSON.stringify({ "value1": "demo" })
+            data: JSON.stringify({ value1: "demo" })
         });
 
 function logResults(json){
