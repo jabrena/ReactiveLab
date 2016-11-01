@@ -28,7 +28,7 @@ function chatBot() {
         if(this.match('(dumb|stupid|is that all)'))
             return ["hey i'm just a proof of concept", "you can make me smarter if you'd like"];
         
-        if(this.match('(game1)'))
+        if(this.match('(game1|challenge|winter game|game)'))
             return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
 
         if(this.match('(ux)'))
