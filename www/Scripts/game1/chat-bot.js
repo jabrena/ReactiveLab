@@ -48,7 +48,7 @@ function chatBot() {
 
         if(this.match('(1|ux|frontend|front-end|client)'))
             return [
-                "Oki,"
+                "Oki,",
                 "What is your favourite channel technology? (Javascript, IOS or Android)"];
 
         if(this.match('(javascript|js)'))
@@ -65,7 +65,7 @@ function chatBot() {
         
         if(this.match('(2|java|middleware|spring)'))
             return [
-                "Oki,"
+                "Oki,",
                 "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you add some feature about Spring Cloud Contract.",
                 "You have 2 weeks to get your best in this game"];
