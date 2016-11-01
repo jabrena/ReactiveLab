@@ -8,8 +8,7 @@ function chatBot() {
 
     this.respondTo = function(input) {
     
-        $.ajax({
-            type: "POST",
+        $.post({
             url: 'https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
             dataType: 'json',
             async: false,
