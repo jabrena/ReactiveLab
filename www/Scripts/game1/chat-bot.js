@@ -52,6 +52,12 @@ function chatBot() {
             "Get extra points if you add some feature about Spring Cloud Contract.",
             "You have 2 weeks to get your best in this game"];
 
+        if(this.match('(rules)'))
+            return ["Store your game on this repo or in your repo.",
+                    "Try to not use the same PAAS provider.",
+                    "With the game deployed, paste your results on issue #4"
+                    "Enjoy with the technology and learn"];
+
         if(this.match('(help)'))
             return ["Create an Issue on Github. My creator will help you."];
 
