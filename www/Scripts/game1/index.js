@@ -68,7 +68,7 @@ $(function() {
         {
         	method: "POST",
         	headers: new Headers({
-				"Content-Type: application/json"
+				"Content-Type": "application/json"
 			}),
             body: JSON.stringify({"value1": "demo", "value2": "demo2"})
         })
