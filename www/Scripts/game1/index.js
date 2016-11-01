@@ -64,7 +64,9 @@ $(function() {
 		var data = new FormData();
 		data.append( "json", JSON.stringify( payload ) );
 
-        fetch("http://anyorigin.com/go?url=https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+		var ifttt = "https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT";
+        //fetch("http://anyorigin.com/go?url=https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+        fetch("http://whateverorigin.org/get?url=" + encodeURIComponent(ifttt)
         {
         	method: "POST",
         	mode: 'cors', 
