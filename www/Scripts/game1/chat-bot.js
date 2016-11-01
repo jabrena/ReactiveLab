@@ -88,7 +88,10 @@ function chatBot() {
                     "Use Spring Reactive"];
 
         if(this.match('(help)'))
-            return ["Create an Issue on Github. My creator will help you."];
+            return [
+                "Type the right question",
+                "If the problem continues, Create an Issue on Github. ",
+                "My creator will help you."];
 
         if(this.match('(about)'))
             return ["Created with ❤️  in Milton Keynes, UK"];
