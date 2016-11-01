@@ -66,7 +66,8 @@ $(function() {
 
 		var ifttt = "https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT";
         //fetch("http://anyorigin.com/go?url=https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
-        fetch("http://whateverorigin.org/get?url=" + encodeURIComponent(ifttt),
+        //fetch("http://whateverorigin.org/get?url=" + encodeURIComponent(ifttt),
+        fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
         	method: "POST",
         	mode: 'cors', 
