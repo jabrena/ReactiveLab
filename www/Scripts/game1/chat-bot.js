@@ -58,8 +58,21 @@ function chatBot() {
                     "With the game deployed, paste your results on issue #4",
                     "Enjoy with the technology and learn"];
 
+        if(this.match('(extra points)'))
+            return ["You get extra points in the following cases:",
+                    "Use Spring Boot 2.0",
+                    "Use complex Spring bean configuration on your examples",
+                    "Use Wire Mock & Spring Cloud contract",
+                    "Call service in parallel with Completable Future or other techniques",
+                    "Apply cache techiques",
+                    "Add HTTP/2 without using Servlet Spec.",
+                    "Use Spring Reactive"];
+
         if(this.match('(help)'))
             return ["Create an Issue on Github. My creator will help you."];
+
+        if(this.match('(help)'))
+            return ["Created with ❤️ in Milton Keynes, UK"];
 
         if(this.input == 'noop')
             return;
