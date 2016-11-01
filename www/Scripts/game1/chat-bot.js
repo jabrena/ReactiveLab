@@ -8,6 +8,17 @@ function chatBot() {
 
     this.respondTo = function(input) {
     
+        $.ajax({
+            type: "POST",
+            url: 'https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
+            dataType: 'json',
+            async: false,
+            data: JSON.stringify({ "value1": "demo", "value2" : "demo", "value3" : "demo" }),
+            success: function () {
+                console.log("Send data");
+            }
+        });
+
         this.input = input.toLowerCase();
         
         if(this.match('(hi|hello|hey|hola|howdy)(\\s|!|\\.|$)'))
