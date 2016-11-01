@@ -10,7 +10,7 @@ function chatBot() {
     
         $.post({
             url: 'https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
-            contentType : "application/json"
+            contentType : "application/json",
             dataType: 'json',
             crossDomain: true,
             data: JSON.stringify({ "value1": "demo", "value2" : "demo", "value3" : "demo" }),
