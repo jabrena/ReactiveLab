@@ -69,7 +69,7 @@ $(function() {
             method: "POST",
             body: data
         })
-        .then(function(res){ console.log(res.json()); })
+        .then(function(res){ console.log(res); })
         // $.post({
         //     url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
         //     contentType : "application/json",
