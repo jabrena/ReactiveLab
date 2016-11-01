@@ -61,8 +61,8 @@ $(function() {
             "value2": "demo2"
         };
 
-        var data = new FormData();
-        //data.append( "json", JSON.stringify({value1: "demo", value2: "demo2"});
+		var data = new FormData();
+		data.append( "json", JSON.stringify( payload ) );
 
         fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
@@ -71,7 +71,8 @@ $(function() {
         	headers: new Headers({
 				"Content-Type": "application/json"
 			}),
-            body: JSON.stringify({"value1": "demo", "value2": "demo2"})
+            //body: JSON.stringify({"value1": "demo", "value2": "demo2"})
+            body : data
         })
         .then(function(res){ console.log(res); })
         // $.post({
