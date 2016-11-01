@@ -13,12 +13,13 @@ function chatBot() {
             contentType : "application/json",
             dataType: "jsonp",
             //dataType: 'json',
-            crossDomain: true,
+            jsonpCallback: "logResults"
             data: JSON.stringify({ "value1": "demo", "value2" : "demo", "value3" : "demo" }),
-            success: function () {
-                console.log("Send data");
-            }
         });
+
+function logResults(json){
+  console.log(json);
+}
 
         this.input = input.toLowerCase();
         
