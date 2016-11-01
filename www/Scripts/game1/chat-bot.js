@@ -37,7 +37,7 @@ function chatBot() {
         if(this.match('(javascript|js)'))
             return [
             "In the first game, you have to learn to publish a Static WebApp on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
-            "Get extra points if you read some stuff about reactive extensions for your favourite Javascript framework (JQuery, React & Angular 2).",
+            "Get extra points if you read some stuff about reactive extensions for your favourite Javascript library/framework (JQuery, React & Angular 2).",
             "You have 2 weeks to get your best in this game"];
 
         if(this.match('(android|ios|swift|objective c|native)'))
