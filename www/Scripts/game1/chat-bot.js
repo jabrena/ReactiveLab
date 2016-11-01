@@ -31,7 +31,7 @@ function chatBot() {
         if(this.match('(game1|challenge|winter game|game)'))
             return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
 
-        if(this.match('(ux)'))
+        if(this.match('(ux|frontend|front-end|client)'))
             return ["Do you like Javascript, IOS or Android?"];
 
         if(this.match('(javascript|js)'))
