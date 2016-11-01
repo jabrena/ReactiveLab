@@ -27,7 +27,6 @@ $(function() {
 		if(reply == null) return;
 		
 		speak(reply);
-		ping();
 
 		var latency = Math.floor((Math.random() * (delayEnd - delayStart)) + delayStart);
 		$('.busy').css('display', 'block');
@@ -52,39 +51,6 @@ $(function() {
 	            window.speechSynthesis.speak(utterance);
 	        }
 		}
-    }
-
-    var ping = function(){
-
-    	var payload = {
-            "value1": "demo",
-            "value2": "demo2"
-        };
-
-		var data = new FormData();
-		data.append( "json", JSON.stringify( payload ) );
-
-		var corsProvider = "https://crossorigin.me/";
-		var iftttRecipe = "https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT";
-        fetch(corsProvider + iftttRecipe,
-        {
-        	method: "POST",
-        	mode: 'cors', 
-        	headers: new Headers({
-				"Content-Type": "application/json"
-			}),
-            //body: JSON.stringify({"value1": "demo", "value2": "demo2"})
-            body : data
-        })
-		.then(function(res){ console.log(res); })
-        // $.post({
-        //     url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
-        //     contentType : "application/json",
-        //     dataType: "jsonp",
-        //     //dataType: 'json',
-        //     //jsonpCallback: "logResults",
-        //     data: JSON.stringify({ value1: "demo" })
-        // });
     }
 	
 	// add a new line to the chat

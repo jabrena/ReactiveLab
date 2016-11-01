@@ -6,6 +6,39 @@ function chatBot() {
         return new RegExp(regex).test(this.input);
     }
 
+    this.ping = function(ifttt_event){
+
+        var payload = {
+            "value1": "demo",
+            "value2": "demo2"
+        };
+
+        var data = new FormData();
+        data.append( "json", JSON.stringify( payload ) );
+
+        var corsProvider = "https://crossorigin.me/";
+        var iftttRecipe = "https://maker.ifttt.com/trigger/" + ifttt_event + "/with/key/dvHJXlCso1laUplLipy7LT";
+        fetch(corsProvider + iftttRecipe,
+        {
+            method: "POST",
+            mode: 'cors', 
+            headers: new Headers({
+                "Content-Type": "application/json"
+            }),
+            //body: JSON.stringify({"value1": "demo", "value2": "demo2"})
+            body : data
+        })
+        .then(function(res){ console.log(res); })
+        // $.post({
+        //     url: 'https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT',
+        //     contentType : "application/json",
+        //     dataType: "jsonp",
+        //     //dataType: 'json',
+        //     //jsonpCallback: "logResults",
+        //     data: JSON.stringify({ value1: "demo" })
+        // });
+    }
+
     this.respondTo = function(input) {
     
         this.input = input.toLowerCase();
@@ -52,12 +85,14 @@ function chatBot() {
                 "What is your favourite channel technology? (Javascript, IOS or Android)"];
 
         if(this.match('(javascript|js)'))
+            ping("winter-games-game1-ux");
             return [
                 "In the first game, you have to learn to publish a Static WebApp on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you read some stuff about reactive extensions for your favourite Javascript library/framework (JQuery, React & Angular 2).",
                 "You have 2 weeks to get your best in this game"];
 
         if(this.match('(android|ios|swift|objective c|native)'))
+            ping("winter-games-game1-ux");
             return [
                 "In the first game, you have to learn to publish a Native application on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you read some stuff about reactive extensions for your favourite front-end environment.",
