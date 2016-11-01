@@ -31,7 +31,7 @@ function chatBot() {
         if(this.match('(game1|challenge|winter game|game)'))
             return ["Do you like UX? Or...", "Do you like middleware plumbing?"];
 
-        if(this.match('(ux|frontend|front-end|client)'))
+        if(this.match('(1|ux|frontend|front-end|client)'))
             return ["Do you like Javascript, IOS or Android?"];
 
         if(this.match('(javascript|js)'))
@@ -44,7 +44,7 @@ function chatBot() {
             "In the first game, you have to learn to publish a Native application on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
             "Later, read some stuff about reactive extensions for your favourite front-end environment."];
         
-        if(this.match('(java|middleware|spring)'))
+        if(this.match('(2|java|middleware|spring)'))
             return [
             "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
             "It is possible to get extra points if you add some feature about Spring Cloud Contract."];
