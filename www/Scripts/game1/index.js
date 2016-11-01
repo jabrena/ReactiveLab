@@ -64,7 +64,7 @@ $(function() {
         var data = new FormData();
         //data.append( "json", JSON.stringify({value1: "demo", value2: "demo2"});
 
-        fetch("https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
+        fetch("https://crossorigin.me/https://maker.ifttt.com/trigger/winter-games-game1/with/key/dvHJXlCso1laUplLipy7LT",
         {
         	method: "POST",
         	mode: 'cors', 
