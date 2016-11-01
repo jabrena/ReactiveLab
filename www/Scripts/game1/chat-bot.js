@@ -62,7 +62,7 @@ function chatBot() {
             return ["You get extra points in the following cases:",
                     "Use Spring Boot 2.0",
                     "Use complex Spring bean configuration on your examples",
-                    "Use Wire Mock & Spring Cloud contract",
+                    "Use Wiremock & Spring Cloud contract",
                     "Call service in parallel with Completable Future or other techniques",
                     "Apply cache techiques",
                     "Add HTTP/2 without using Servlet Spec.",
