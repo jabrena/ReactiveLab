@@ -101,7 +101,7 @@ function chatBot() {
         }
 
         if(this.match('(android|ios|swift|objective c|native)')){
-            //this.ping("winter-games-game1-ux");
+            this.ping("winter-games-game1-ux");
             return [
                 "In the first game, you have to learn to publish a Native application on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you read some stuff about reactive extensions for your favourite front-end environment.",
