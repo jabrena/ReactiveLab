@@ -109,7 +109,7 @@ function chatBot() {
         }
         
         if(this.match('(2|backend|middleware|spring)')){
-            //this.ping("winter-games-game1-java");
+            this.ping("winter-games-game1-java");
             return [
                 "Oki,",
                 "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
