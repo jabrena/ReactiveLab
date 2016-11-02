@@ -97,7 +97,7 @@ function chatBot() {
                 "Get extra points if you read some stuff about reactive extensions for your favourite front-end environment.",
                 "You have 2 weeks to get your best in this game"];
         
-        if(this.match('(2|java|middleware|spring)'))
+        if(this.match('(2|backend|middleware|spring)'))
             this.ping("winter-games-game1-java");
             return [
                 "Oki,",
