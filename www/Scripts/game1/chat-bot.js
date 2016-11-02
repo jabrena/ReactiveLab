@@ -93,7 +93,7 @@ function chatBot() {
         }
 
         if(this.match('(javascript|js)')){
-            this.ping("winter-games-game1-ux");
+            //this.ping("winter-games-game1-ux");
             return [
                 "In the first game, you have to learn to publish a Static WebApp on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you read some stuff about reactive extensions for your favourite Javascript library/framework (JQuery, React & Angular 2).",
@@ -101,7 +101,7 @@ function chatBot() {
         }
 
         if(this.match('(android|ios|swift|objective c|native)')){
-            this.ping("winter-games-game1-ux");
+            //this.ping("winter-games-game1-ux");
             return [
                 "In the first game, you have to learn to publish a Native application on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
                 "Get extra points if you read some stuff about reactive extensions for your favourite front-end environment.",
@@ -109,7 +109,7 @@ function chatBot() {
         }
         
         if(this.match('(2|backend|middleware|spring)')){
-            this.ping("winter-games-game1-java");
+            //this.ping("winter-games-game1-java");
             return [
                 "Oki,",
                 "In the first game, you have to learn to publish a REST API on your favourite Cloud Provider. (AWS, Bluemix, PWS or Google Cloud)",
