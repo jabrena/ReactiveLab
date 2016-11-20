@@ -46,6 +46,9 @@ $(function() {
 	var speak = function(texts){
 		if(window.speechSynthesis){ 
 	        for(var i=0; i < texts.length; i++){
+	        	if(texts[i].indexOf("http") != -1){
+	        		continue;
+	        	}
 	            var utterance = new SpeechSynthesisUtterance(texts[i]);
 	            utterance.lang = 'en-US';
 	            window.speechSynthesis.speak(utterance);
