@@ -84,7 +84,7 @@ function chatBot() {
                 "a new method calling 2 Services with Future objects and simulate and exception in one of them.",
                 "a new method calling 2 Services in parallel using CompletableFuture objects.",
                 "a new method calling 2 Services with CompletableFuture objects and simulate a timeout in one of them.",
-                "Get extra points if you use in some tests the library from Spotify about for your CompletableFuture.",
+                "Get extra points if you use in some tests the library from Spotify about CompletableFuture.",
                 "You have 2 weeks to get your best in this game"];
         }
 
