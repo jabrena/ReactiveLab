@@ -1,0 +1,115 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+
+body {
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 13px;
+    background: url(./game1.jpg) top center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.chat {
+    border: 1px solid #cccccc;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    opacity:0.6;
+    margin-top: 10px;
+}
+
+.chat div {
+    margin: 10px 12px 15px;
+    padding: 10px 10px 10px;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.chat .party {
+    font-weight: bold;
+}
+
+.chat .you {
+    color: red;
+}
+
+.chat .other {
+    color: orange;
+}
+
+.chat .text {
+    color: white;
+    padding-bottom: 0px;
+}
+
+.busy {
+    position: absolute;
+    padding: 3px 0;
+    color: #666;
+    display: none;
+    font-size: 11px;
+}
+
+.input {
+    margin-top: 20px;
+
+}
+
+.input input {
+    vertical-align: top;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 585px;
+    margin: 0;
+    border-radius: 5px;
+    height: 30px;
+    background-color: red;
+    opacity:0.6;
+    color: black;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.back{
+    color: black;    
+    text-decoration: none;
+}
+
+.back a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+.back a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.back a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+.back a:active {
+    color: white;
+    text-decoration: none;
+}
