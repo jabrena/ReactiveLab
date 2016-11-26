@@ -18,16 +18,20 @@ function chatBot() {
 
         var corsProvider = "https://crossorigin.me/";
         var iftttRecipe = "https://maker.ifttt.com/trigger/" + ifttt_event + "/with/key/dvHJXlCso1laUplLipy7LT";
-        fetch(corsProvider + iftttRecipe,
-        {
-            method: "POST",
-            mode: 'cors', 
-            headers: new Headers({
-                "Content-Type": "application/json"
-            }),
-            body : data
-        })
-        .then(function(res){ console.log(res); })
+        
+        //Safari doesn´t have fetch support
+        if(self.fetch) {
+            fetch(corsProvider + iftttRecipe,
+            {
+                method: "POST",
+                mode: 'cors', 
+                headers: new Headers({
+                    "Content-Type": "application/json"
+                }),
+                body : data
+            })
+            .then(function(res){ console.log(res); })
+        }
     }
 
     this.respondTo = function(input) {
