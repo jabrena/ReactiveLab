@@ -182,4 +182,24 @@ hr{
   margin: 20px;
 }
 
+.button {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a.button:hover { color: #fff; }
+
+table, th, td {
+   border: 1px solid black;
+}
+td{
+     padding-right: 10px;
+}
 

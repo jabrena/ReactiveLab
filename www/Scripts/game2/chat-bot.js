@@ -77,7 +77,7 @@ function chatBot() {
         }
         
         if(this.match('(1|backend|middleware|spring)')){
-            this.ping("winter-games-game1-java");
+            this.ping("winter-games-game2-java");
             return [
                 "Oki,",
                 "In the second game, you have to learn the difference between a Future object and the usage of CompletableFuture.",

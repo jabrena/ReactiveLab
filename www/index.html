@@ -38,17 +38,109 @@
         </div>
     </div>
     <div class="wrap">
-        <h2>Previous winners: <i class="fa fa-trophy" aria-hidden="true" style="color:orange;"></i></h2>
-        Click to see the previous results from the athletes on <a href="https://jabrena.github.io/ReactLab/www/" target="_blank">Olympic Games</a>
-        <hr />
         <h2>Registration to Winter games</h2>
         <p>Make a comment on issue <a href="https://github.com/jabrena/ReactiveLab/issues/2" target="_blank">#2</a></p>
         <hr />
+        <h2>Why</h2>
+        <p>
+        <a href="https://spring.io/blog/2015/12/03/spring-framework-5-0-roadmap-update" target="_blank">Spring 5</a> and some reactive libraries like <a href="http://reactivex.io/" target="_blank">RX Java</a>, <a href="https://projectreactor.io/" target="_blank">Reactor</a> &amp; <a href="http://docs.spring.io/spring-framework/docs/5.0.0.M1/spring-framework-reference/html/web-reactive.html" target="_blank">Spring Reactive</a> use in a intensive way, functional programming. This series of games allow the engineer to discover new reactive features with/without the usage of <a href="https://en.wikipedia.org/wiki/Java_servlet" target="_blank">Servlet API</a> to develop Microservices with Java 8 in platforms multicore.
+        </p>
+        <p>
+            <a href="http://www.java9countdown.xyz/" target="_blank"><img src="./Images/JavaTimeLine.jpg" style="border:1px solid #021a40;" /></a>
+        </p>
+        <hr />
+        <h2>Winter Games participants: <i class="fa fa-trophy" aria-hidden="true" style="color:orange;"></i></h2>
+        <div class="ul">
+            <p>
+            Latest update: 04/12/2016
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Country</th>
+                        <th>Athlete</th>
+                        <th>Game</th>
+                        <th>Source</th>
+                        <th>Cloud</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>🇬🇧</td>
+                        <td><i>Sam Kirton</i></td>
+                        <td>Game 5</td>
+                        <td>RxJava for Swift</td>
+                        <td>Pending</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>🇮🇹</td>
+                        <td><i>Davide Bianchini</i></td>
+                        <td>Game 1</td>
+                        <td>Pending</td>
+                        <td><a href="https://runge.herokuapp.com/" target="_blank">REST API with Flask</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>🇪🇸</td>
+                        <td><i>Victor Herraiz</i></td>
+                        <td>Game 1</td>
+                        <td><a href="https://github.com/victorherraiz/cached-greeter" target="_blank">Source</a></td>
+                        <td>Pending</td>
+                    </tr>                    
+                    <tr>
+                        <td>4</td>
+                        <td>🇪🇸</td>
+                        <td><i>Juan Antonio Bre&ntilde;a</i></td>
+                        <td>Game 2</td>
+                        <td><a href="https://github.com/jabrena/winter-games-game1" target="_blank">Source</a></td>
+                        <td><a href="https://winter-games-game1.herokuapp.com/" target="_blank">Swagger Docs</a></td>
+                    </tr>                    
+                </tbody>
+
+            </table>
+        </div>
+        <hr />
         <h2 class="h2">Table of contents</h2>
-        <h3><a href="game1.html" target="_blank">Game 1: REST Hello World</a></h3> 
-        <h3><a href="game2.html" target="_blank">Game 2: Futures &amp; CompletableFuture</a></h3>   
-        <h3>Game 3: Functional Programming with Java 8</h3> 
-        <h3>Game 4: RxJava</h3>   
+        <h3><a href="game1.html" target="_blank">Game 1: REST Hello World</a>&nbsp;(01/11/2016)</h3> 
+        <h3><a href="game2.html" target="_blank">Game 2: Futures &amp; CompletableFuture</a>&nbsp;(04/12/2016)</h3>
+        <h3>Game 3: Functional Programming with Java 8&nbsp;(01/12/2016)</h3>
+        <div class="ul">
+            <p>
+                <strong>Computer Science concepts to learn:</strong>
+            </p>
+            <ul>
+                <li>Pure functions</li>
+                <li><a href="https://en.wikipedia.org/wiki/Tail_call" target="_blank">Tail Call</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Fluent_interface#Java" target="_blank">Fluent Interface</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Referential_transparency">Referential Transparency</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Higher-order_programming" target="_blank">Higher Order Programming</a></li>
+            </ul>
+            <br />
+            <p>
+                <strong>Features about functional programming with Java 8:</strong>
+            </p>
+            <ul>
+                <li><a href="https://www.jcp.org/aboutJava/communityprocess/final/jsr335/index.html" target="_blank">JSR 335</a></li>
+                <li>Difference between Lambda Expression and Anonymous class</li>
+                <li>Monads</li>
+                <li>Stream API</li>
+                <li>Functions &amp; Primitives</li>
+                <li>Currying vs Closures</li>
+                <li>@FunctionalInterface</li>
+                <li>Built-in Functional Interfaces</li>
+                <li>Passing behaviours</li>
+                <li>Function chaining</li>
+            </ul>
+            <p>
+                <a href="game3.html" class="button" target="_blank">Challenges to solve</a>
+            </p>
+        </div>
+        <h3>Game 4: Multicore methods with Java 8 (15/01/2017)</h3>  
+        <h3>Game 5: RxJava (29/01/2017)</h3>   
+        <!--
         <div class="ul">
             <ul>
                 <li>Create a second version of the method parallel in this case using RX Java.
@@ -56,9 +148,9 @@
                 <li>Create a Service to manage the access to your favourite <a href="https://en.wikipedia.org/wiki/List_of_in-memory_databases" target="_blank">Database in Memory</a></li>
                 <li>Extra of the week: <a href="https://github.com/ojacquemart/spring-boot-rxjava">RX Java</a></li>
             </ul>
-        </div>
-        <hr />
-        <h3>Game 5: Spring Boot 2.0 + Spring Reactive</h3>
+        </div>-->
+        <h3>Game 6: Spring Boot 2.0 + Spring Reactive (19/02/2017)</h3>
+        <!--
         <div class="ul">
             <ul>
                 <li>Using a Database in Memory, try to detect a DOS Attack using a Custom Zuul filter</li>
@@ -66,26 +158,35 @@
                 <li>Extras of the week: <a href="http://gatling.io/#/">What is Gatling?</a></li>
                 <li>Extras of the week: <a href="http://download.java.net/java/jdk9/docs/api/java/util/concurrent/Flow.html" target="_blank">What is JDK9 Flow Object?</a></li>
             </ul>
-        </div>  
-        <h3>Game 6: Create a reactive stream</h3>
+        </div> 
+        --> 
+        <h3>Game 7: Create a reactive stream (26/02/2017)</h3>
+        <!--
         <div class="ul">
             <ul>
                 <li>Serve your first reactive stream.</li>
                 <li>Extras of the week: <a href="https://spring.io/blog/2016/07/28/reactive-programming-with-spring-5-0-m1" target="_blank">Reactive Programming with Spring 5.0</a></li>
             </ul>
-        </div> 
-        <h3>Game 6</h3>
-        <p>More games, coming soon. The winter is coming.</p>  
+        </div>
+        -->
+        <hr />
         <h2>Related books</h2>
         <div class="ul">
             <ul>
-                <li><a href="https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683">Effective Java (2nd Edition)</a></li>
-                <li><a href="https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882">Clean Code: A Handbook of Agile Software Craftsmanship</a></li>
-                <li><a href="http://fasterj.com/tools/books.shtml">Java Performance tunning</a></li>
-                <li><a href="https://www.amazon.co.uk/Functional-Programming-Java-Developers-Concurrency/dp/1449311032">Functional Programming for Java Developers</a>
+                <li><a href="https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683" target="_blank">Effective Java (2nd Edition)</a></li>
+                <li><a href="https://www.amazon.co.uk/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882" target="_blank">Clean Code: A Handbook of Agile Software Craftsmanship</a></li>
+                <li><a href="http://fasterj.com/tools/books.shtml" target="_blank">Java Performance tunning</a></li>
+                <li><a href="https://www.amazon.co.uk/Functional-Programming-Java-Developers-Concurrency/dp/1449311032" target="_blank">Functional Programming for Java Developers</a></li>
+                <li><a href="https://www.amazon.com/Java-Lambdas-Functional-Programming-Masses/dp/1449370772/ref=pd_sbs_14_t_1?_encoding=UTF8&psc=1&refRID=A30BPKCB6D60170A57R5" target="_blank">Java 8 Lambdas: Functional Programming For The Masses</a></li>
+                <li><a href="https://www.amazon.com/Mastering-Lambdas-Programming-Multicore-Oracle/dp/0071829628/ref=pd_sbs_14_t_2?_encoding=UTF8&psc=1&refRID=A30BPKCB6D60170A57R5" target="_blank">Mastering Lambdas: Java Programming in a Multicore World</a></li>
+                <li><a href="https://www.amazon.co.uk/Functional-Programming-Java-Harnessing-Expressions/dp/1937785467" target="_blank">Functional Programming in Java: Harnessing the Power Of Java 8 Lambda Expressions</a></li>
             </ul>
         </div>
-        &nbsp;    
+        <hr />
+        <h2>Olympic Games finishers: <i class="fa fa-trophy" aria-hidden="true" style="color:orange;"></i></h2>
+        Click to see the previous results from the athletes on <a href="https://jabrena.github.io/ReactLab/www/" target="_blank">Finishers</a>
+        <hr />
+        <i>Juan Antonio Bre&ntilde;a Moral 20016-2017</i><br />&nbsp;
     </div>
 </body>
 </html>

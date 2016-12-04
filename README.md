@@ -1,2 +1,2 @@
 # ReactiveLab
-A Lab about backend reactive technologies for Java 8
+A Lab about reactive technologies with Java 8 to be applied on Backend.
